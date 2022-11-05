@@ -29,6 +29,8 @@ $controller_path = 'App\Http\Controllers';
 
     Route::get('/', $controller_path . '\pages\HomePage@index')->name('pages-home');
     Route::get('/page-2', $controller_path . '\pages\Page2@index')->name('pages-page-2');
+    Route::get('/page-3', $controller_path . '\pages\MedicacionController@index')->name('pages-page-3');
+    Route::get('/medicacion/{id}', $controller_path . '\pages\MedicacionController@view')->name('medicacion-view');
 
-    
+
 });

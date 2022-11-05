@@ -20,9 +20,9 @@ $customizerHidden = 'customizer-hide';
       <div class="flex-row text-center mx-auto">
         {{-- <img src="{{asset('assets/img/pages/login-'.$configData['style'].'.png')}}" alt="Auth Cover Bg color" width="520" class="img-fluid authentication-cover-img" data-app-light-img="pages/login-light.png" data-app-dark-img="pages/login-dark.png"> --}}
         <div class="mx-auto">
-          <h3>Discover the powerful admin template 🥳</h3>
+          <h3>Bienvenido a MEDISHARE 🥳</h3>
           <p>
-            Perfectly suited for all level of developers which helps you to <br> kick start your next big projects & Applications.
+            la aplicación perfecta para tu control de medicamentos.
           </p>
         </div>
       </div>
@@ -40,8 +40,8 @@ $customizerHidden = 'customizer-hide';
           </a>
         </div>
         <!-- /Logo -->
-        <h4 class="mb-2">Welcome to {{config('variables.templateName')}}! 👋</h4>
-        <p class="mb-4">Please sign-in to your account and start the adventure</p>
+        <h4 class="mb-2">Bienvenido a {{config('variables.templateName')}}! 👋</h4>
+        <p class="mb-4">Por favor introduce tus datos para ingresar</p>
 
         @if (session('status'))
         <div class="alert alert-success mb-1 rounded-0" role="alert">
@@ -67,7 +67,7 @@ $customizerHidden = 'customizer-hide';
               <label class="form-label" for="login-password">Password</label>
               @if (Route::has('password.request'))
               <a href="{{ route('password.request') }}">
-                <small>Forgot Password?</small>
+                <small>¿Olvidaste tu contraseña?</small>
               </a>
               @endif
             </div>
@@ -85,38 +85,32 @@ $customizerHidden = 'customizer-hide';
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="remember-me" name="remember" {{ old('remember') ? 'checked' : '' }}>
               <label class="form-check-label" for="remember-me">
-                Remember Me
+                Recuerdame
               </label>
             </div>
           </div>
-          <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+          <button class="btn btn-primary d-grid w-100" type="submit">Ingresar</button>
         </form>
 
         <p class="text-center">
-          <span>New on our platform?</span>
+          <span>¿Eres nuevo?</span>
           @if (Route::has('register'))
           <a href="{{ route('register') }}">
-            <span>Create an account</span>
+            <span>Crear cuenta</span>
           </a>
           @endif
         </p>
 
         <div class="divider my-4">
-          <div class="divider-text">or</div>
+          <div class="divider-text">o</div>
         </div>
 
         <div class="d-flex justify-content-center">
-          <a href="javascript:;" class="btn btn-icon btn-label-facebook me-3">
-            <i class="tf-icons bx bxl-facebook"></i>
-          </a>
 
           <a href="javascript:;" class="btn btn-icon btn-label-google-plus me-3">
             <i class="tf-icons bx bxl-google-plus"></i>
           </a>
 
-          <a href="javascript:;" class="btn btn-icon btn-label-twitter">
-            <i class="tf-icons bx bxl-twitter"></i>
-          </a>
         </div>
       </div>
     </div>

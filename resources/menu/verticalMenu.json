@@ -7,10 +7,16 @@
       "slug": "pages-home"
     },
     {
-      "url": "/page-2",
-      "icon": "menu-icon tf-icons bx bx-file",
-      "name": "Page 2",
-      "slug": "pages-page-2"
+      "url": "/medicaciones",
+      "name": "Medicaciones",
+      "icon": "menu-icon tf-icons bx bx-capsule",
+      "slug": "pages-medicaciones"
+    },
+    {
+      "url": "/informes",
+      "name": "Informes",
+      "icon": "menu-icon tf-icons bx bxs-report",
+      "slug": "pages-medicaciones"
     }
   ]
 }
